@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test | HTML Validation </title>
+</head>
+<body>
+     <!--
+        - Start of Form
+        - <form> defines an HTML form for user input
+        - <input> defines an input control
+    -->
+<form>
+    <!--Start of Form-
+        - was going to lable for number, but that's the type for input field, using code from w#Schools, "Number Field"  -->
+    <label action="/action_page.php" for= "quantity"> Quanity (between 1 and 5: ) </label>
+    <input type="number" id="quantity" name="quantity" min="1" max="100" required>
+<!--
+    -test: entered 0: "value must be greater than or equal to one"
+    -test: entered 101: "value must be less than or equal to 100"
+    -test: enter, letter and or special characters: input field stays blank, however an e/E can be enter
+    -note: read www3resource.com "JavaScript: HTML Form -checking numbers and letters post"
+    -note: maybe all validation should be done with JavaScript?
+-->
+    <input type="submit">        
+</form>
+<!--
+Notes: April 4, 2023
+-later wrap input field in form tags?
+- input size attribute: three numbers lowest number is 1, highest is 100
+- what if there is white space? how to remove values in JavaScript
+- can white space values be removed in html 
+- which browser support html require field?
+
+
+
+-->    
+</body>
+</html>
